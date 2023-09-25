@@ -24,7 +24,7 @@ internal static string NewID()
 }
 ```
 
-## DateToStr(DateTime) - предобразование даты в строку
+## DateToStr(DateTime) - преобразование даты в строку
 
 Для обращения к сервису используется специфичный формат даты с указанием временной зоны, но без ее указания (как бы это странно не звучало).
 
@@ -36,5 +36,26 @@ internal static string NewID()
 internal static string DateToStr(DateTime dt)
 {
     return $"{dt.ToUniversalTime():s}Z";
+}
+```
+
+## StrToDate(string) - преобразование строки в дату
+
+Обратная от `DateToStr` операция.
+
+``` cs
+/// <summary>
+/// Преобразование строки в дату
+/// </summary>
+/// <param name="date">Строка даты</param>
+/// <returns></returns>
+internal static DateTime? StrToDate(string date)
+{
+    if (DateTime.TryParse(date.TrimEnd('Z'), out var udate))
+    {
+        return udate.ToLocalTime();
+    }
+
+    return default;
 }
 ```
