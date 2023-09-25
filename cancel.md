@@ -61,6 +61,33 @@
 }
 ```
 
+Пример уведомления о проведении возврата:
+
+``` json
+{
+    "sbpOperationParams": {
+        "sbpOperationId": "A32680755411910E0000020011080701",
+        "sbpPayerId": "*********6600"
+    },
+    "authCode": "000000",
+    "orderId": "18faaa9ee4ac4794a8cf6b685d681cd0",
+    "clientName": "Артем Ахтямович Т.",
+    "partnerOrderNumber": "0000100000049",
+    "rqUid": "dacd57767e67403e9cdae8a9ebf57e5b",
+    "rqTm": "2023-09-25T07:58:41Z",
+    "idQR": "AD10002J6D31UCKR93OOP59NJ8290FK0",
+    "operationSum": 1,
+    "tid": "29525577",
+    "orderState": "PAID",
+    "responseCode": "-1",
+    "operationDateTime": "2023-09-25T10:58:41Z",
+    "operationId": "AF41641CB3164202AF22682B60CBB077",
+    "operationType": "REFUND",
+    "operationCurrency": "643",
+    "memberId": "00003505"
+}
+```
+
 Это минимальный набор обязательных параметров согласно спецификации.
 
 Необходимо обратить внимание на параметр `cancel_operation_sum`, который указывает на сумму возврата. Сумма не может быть больше суммы оплаты (это контролируется со стороны Сбера) и может быть **только один возврат по оплате.**
