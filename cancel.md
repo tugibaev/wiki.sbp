@@ -71,7 +71,6 @@
     },
     "authCode": "000000",
     "orderId": "18faaa9ee4ac4794a8cf6b685d681cd0",
-    "clientName": "Артем Ахтямович Т.",
     "partnerOrderNumber": "0000100000049",
     "rqUid": "dacd57767e67403e9cdae8a9ebf57e5b",
     "rqTm": "2023-09-25T07:58:41Z",
