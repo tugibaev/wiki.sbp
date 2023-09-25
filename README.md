@@ -6,4 +6,4 @@
 
 ## Содержание
 
-[https://github.com/tugibaev/wiki.sbp/blob/main/connect.md](Подключение СБП в Сбере)
+1. [Подключение СБП в Сбере](connect.md)
